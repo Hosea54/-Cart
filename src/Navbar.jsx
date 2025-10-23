@@ -1,10 +1,12 @@
 import { FaCartPlus } from "react-icons/fa";
-
 const Navbar = () => {
   return (
     <nav>
       <div className="nav-center">
-        <h5>Cart</h5>
+        <div className="logo">
+          <h3>Shoppingcart</h3>
+          <p>useReducer</p>
+        </div>
         <div className="nav-container">
           <FaCartPlus className="cart-icon" />
           <div className="amount-container">
