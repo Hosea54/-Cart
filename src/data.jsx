@@ -1,7 +1,7 @@
 import img1 from "./images/Iphone.jpg";
-import img2 from "./images/Iphone.jpg";
-import img3 from "./images/Iphone.jpg";
-import img4 from "./images/Iphone.jpg";
+import img2 from "./images/MacBook.jpg";
+import img3 from "./images/Shoes.jpg";
+import img4 from "./images/Watch.jpg";
 
 const cartItems = [
   { id: "rec1JZlfCIBOPdcT2", title: "Iphone", price: "899.99", img: img1 },
