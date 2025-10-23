@@ -201,6 +201,7 @@ nav h4 {
   color: var(--white);
   font-size: 1.25rem;
 }
+/* ===LOGO=== */
 .logo {
   text-align: center;
 }
@@ -218,4 +219,47 @@ nav h4 {
   color: orange;
   margin: 0;
   background: none;
+}
+/* ===Cart=== */
+.cart {
+  min-height: calc(100vh-5rem);
+  width: var(--view-width);
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 2.5rem 0;
+}
+.cart h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.empty-cart {
+  text-transform: lowercase;
+  color: var(--grey-500);
+  margin-top: 1rem;
+  text-align: center;
+}
+hr {
+  background: var(--grey-300);
+  border-color: transparent;
+  margin-bottom: 1rem;
+  border-width: 1px;
+}
+.cart footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+.cart-total {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.cart-total span {
+  background: var(--primary-500);
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--borderRadius);
+  color: var(--white);
 }
