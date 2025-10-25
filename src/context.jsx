@@ -1,17 +1,19 @@
 import { createContext } from "react";
 import { useContext, useReducer } from "react";
+import reducer from "./reducer";
+import { CLEAR_CART } from "./actions";
+import cartItems from "./data";
+
 const AppContext = createContext();
 const initialState = {
   isLoading: false,
-};
-const reducer = (state, action) => {
-  return state;
+  cart: new Map(cartItems.map((item) => [item.id, item])),
 };
 
 export const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <AppContext.Provider value={{ state, dispatch }}>
+    <AppContext.Provider value={{ ...state, dispatch }}>
       {children}
     </AppContext.Provider>
   );
