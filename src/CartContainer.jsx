@@ -24,7 +24,7 @@ const CartContainer = () => {
           </a>
         </li>
         <li>
-          <a href="www.linkedin.com/in/hosea-ejoh-9003682b4">
+          <a href="https://www.linkedin.com/in/hosea-ejoh-9003682b4/">
             <FaLinkedin />
           </a>
         </li>
