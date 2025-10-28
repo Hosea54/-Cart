@@ -1,5 +1,9 @@
 # React + Vite
 
+# api Endpoint:
+
+url: https://6900fe21ff8d792314bc3d6e.mockapi.io/cartItems
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
