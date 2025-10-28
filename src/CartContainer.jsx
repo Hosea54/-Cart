@@ -1,5 +1,7 @@
 import CartItem from "./CartItem";
 import { useGlobalContext } from "./context";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 const CartContainer = () => {
   const { cart, clearCart, totalCost } = useGlobalContext();
   const cartArray = Array.from(cart.entries());
@@ -15,6 +17,18 @@ const CartContainer = () => {
   }
   return (
     <section className="cart">
+      <ul className="icons-container">
+        <li>
+          <a href="https://github.com/Hosea54/Cart">
+            <FaGithub />
+          </a>
+        </li>
+        <li>
+          <a href="www.linkedin.com/in/hosea-ejoh-9003682b4">
+            <FaLinkedin />
+          </a>
+        </li>
+      </ul>
       <header>
         <h2>Your bag</h2>
       </header>

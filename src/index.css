@@ -159,7 +159,18 @@ ul {
 .btn-block {
   width: 100%;
 }
-
+.icons-container {
+  display: flex;
+  justify-self: center;
+  margin-bottom: 1rem;
+}
+ul li {
+  margin-right: 10px;
+}
+ul li a {
+  color: black;
+  font-size: 30px;
+}
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -243,7 +254,6 @@ nav h4 {
   width: var(--view-width);
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 40px;
   padding: 2.5rem 0;
 }
 .cart h2 {

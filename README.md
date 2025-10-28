@@ -19,5 +19,6 @@ A simple yet functional shopping cart application built with React, demonstratin
 
 This app uses a mock API to load the initial cart data.
 
-**Endpoint:**  
+## Endpoint:
+
 const url = https://6900fe21ff8d792314bc3d6e.mockapi.io/cartItems
