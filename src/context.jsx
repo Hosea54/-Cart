@@ -1,7 +1,14 @@
 import { createContext, useEffect } from "react";
 import { useContext, useReducer } from "react";
 import reducer from "./reducer";
-import { CLEAR_CART, INCREASE, DECREASE, REMOVE_ITEM } from "./actions";
+import {
+  CLEAR_CART,
+  INCREASE,
+  DECREASE,
+  REMOVE_ITEM,
+  LOADING,
+  DISPLAY_ITEM,
+} from "./actions";
 import cartItems from "./data";
 import { getTotals } from "./utils";
 const url = "https://6900fe21ff8d792314bc3d6e.mockapi.io/cartItems";
@@ -27,9 +34,11 @@ export const AppProvider = ({ children }) => {
     dispatch({ type: REMOVE_ITEM, payload: { id } });
   };
   const fetchData = async () => {
+    dispatch({ type: LOADING });
     const response = await fetch(url);
     const cart = await response.json();
     console.log(cart);
+    dispatch({ type: DISPLAY_ITEM, payload: { cart } });
   };
   useEffect(() => {
     fetchData();
